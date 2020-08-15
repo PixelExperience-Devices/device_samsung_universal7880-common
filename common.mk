@@ -16,7 +16,10 @@
 
 LOCAL_PATH := device/samsung/universal7880-common
 
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-pe
 
 # Flat device tree for boot image
 PRODUCT_HOST_PACKAGES += \
