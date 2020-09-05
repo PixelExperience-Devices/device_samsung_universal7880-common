@@ -15,11 +15,13 @@
 import re
 
 def FullOTA_Assertions(info):
-  AddBootloaderAssertion(info, info.input_zip)
+  input_zip = info.input_zip
+  AddBootloaderAssertion(info, input_zip)
 
 
 def IncrementalOTA_Assertions(info):
-  AddBootloaderAssertion(info, info.target_zip)
+  input_zip = info.input_zip
+  AddBootloaderAssertion(info, input_zip)
 
 
 def AddBootloaderAssertion(info, input_zip):
